@@ -9,11 +9,11 @@ import { CartSummaryComponent } from './cartSummary.component';
 import { CartDetailComponent } from './cartDetail.component';
 import { CheckoutComponent } from './checkout.component';
 @NgModule({
-    imports: [ModelModule, BrowserModule, 
+    imports: [ModelModule, BrowserModule,
         FormsModule, RouterModule],
-    declarations: [StoreComponent, CounterDirective, 
+    declarations: [StoreComponent, CounterDirective,
         CartSummaryComponent, CheckoutComponent, CartDetailComponent],
-    exports: [StoreComponent, CartDetailComponent, 
+    exports: [StoreComponent, CartDetailComponent,
         CheckoutComponent]
 })
 export class StoreModule { }

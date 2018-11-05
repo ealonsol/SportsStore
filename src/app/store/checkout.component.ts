@@ -4,13 +4,13 @@ import { OrderRepository } from '../model/order.repository';
 import { Order } from '../model/order.model';
 
 @Component({
-    templateUrl:'checkout.component.html',
+    templateUrl: 'checkout.component.html',
     styleUrls: ['checkout.component.css']
 })
-export class CheckoutComponent { 
+export class CheckoutComponent {
 
-    orderSent: boolean = false;
-    submitted: boolean = false;
+    orderSent : boolean = false;
+    submitted : boolean = false;
     constructor(public repository: OrderRepository,
                 public order: Order) {}
     submitOrder(form: NgForm) {

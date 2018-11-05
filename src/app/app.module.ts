@@ -14,10 +14,10 @@ import { StoreFirstGuard } from './storeFirst.guard';
   ],
   imports: [
     BrowserModule, StoreModule, RouterModule.forRoot([
-      { path: "store", component: StoreComponent, canActivate: [StoreFirstGuard] },
-      { path: "cart", component: CartDetailComponent, canActivate: [StoreFirstGuard] },
-      { path: "checkout", component: CheckoutComponent, canActivate: [StoreFirstGuard] },
-      { path: "**", redirectTo: "/store" }
+      { path: 'store', component: StoreComponent, canActivate: [StoreFirstGuard] },
+      { path: 'cart', component: CartDetailComponent, canActivate: [StoreFirstGuard] },
+      { path: 'checkout', component: CheckoutComponent, canActivate: [StoreFirstGuard] },
+      { path: '**', redirectTo: '/store' }
         ])
   ],
   providers: [StoreFirstGuard],

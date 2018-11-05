@@ -1,7 +1,7 @@
 
 import { Injectable } from '@angular/core';
 import {
-    ActivatedRouteSnapshot, RouterStateSnapshot,Router
+    ActivatedRouteSnapshot, RouterStateSnapshot, Router
 } from '@angular/router';
 import { StoreComponent } from './store/store.component';
 
@@ -12,7 +12,7 @@ export class StoreFirstGuard {
     canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
         if (this.firstNavigation) {
             this.firstNavigation = false;
-            if (route.component != StoreComponent) {
+            if (route.component !== StoreComponent) {
                 this.router.navigateByUrl('/');
                 return false;
             }
